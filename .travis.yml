@@ -16,11 +16,11 @@ before_install:
 
 install: 
   - yarn install
-  - sleep 10
 
 before_script:
   - SERVICE=$SERVICE make ensure-dependencies
-
+  - sleep 10
+  
 script:
   - make qa
 
